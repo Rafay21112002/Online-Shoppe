@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333; /* Set background color for header and footer */
+    color: #fff; /* Set text color to white for better contrast */
+    padding: 20px;
+}
+h1 {
+    text-align: center; /* Center align heading */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add margin between list items */
+}
+
+a {
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+main {
+    padding: 20px; /* Add padding around main content */
+}
+
+/* Specific Page Styles */
+.hero {
+    background-image: url('images/hero-bg.jpg'); /* Set background image for hero section */
+    background-size: cover; /* Cover the entire hero section with background image */
+    padding: 100px; /* Add padding to hero section for spacing */
+    text-align: center; /* Center align text content */
+    color: #ff6600; /* Set text color to orange */
+}
+
+.btn {
+    background-color: #ff6600; /* Set button background color to orange */
+    color: #fff; /* Set button text color to white */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to button */
+    text-decoration: none; /* Remove underline from button text */
+    font-weight: bold; /* Apply bold font weight to button text */
+}
+
+.inventory {
+    display: flex; /* Use CSS grid for inventory layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column layout based on screen size */
+    gap: 20px; /* Add gap between grid items */
+}
+
+.candle img {
+    display: inline-block; /* Display products inline */
+    margin: 20px; /* Add margin around products */
+    text-align: center; /* Center align text content within products */
+    width: 200px; /* Set width of product images */
+    height: auto; /* Maintain aspect ratio of product images */
+    border-radius: 5px; /* Add border radius to product images */
+}
+
+.order-form label {
+    display: block; /* Display form labels as block elements for better spacing */
+    margin-bottom: 10px; /* Add margin below form labels */
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form textarea,
+.order-form select {
+    width: 100%; /* Set form input width to 100% for responsiveness */
+    padding: 10px; /* Add padding to form inputs */
+    margin-bottom: 20px; /* Add margin below form inputs */
+    border-radius: 5px; /* Add border radius to form inputs */
+    border: 1px solid #ccc; /* Add border to form inputs */
+}
+
+.order-form button,
+.contact-form button {
+    background-color: #ff6600; /* Set button background color to orange */
+    color: #fff; /* Set button text color to white */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding from unordered list */
+}
+
+.contact-info li {
+    margin-bottom: 10px; /* Add margin below list items */
+}
+
+.contact-form textarea {
+    width: 100%; /* Set textarea width to 100% for responsiveness */
+    padding: 10px; /* Add padding to textarea */
+    margin-bottom: 20px; /* Add margin below textarea */
+    border-radius: 5px; /* Add border radius to textarea */
+    border: 1px solid #ccc; /* Add border to textarea */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block; /* Display list items vertically on smaller screens */
+        margin-bottom: 10px; /* Add margin below list items */
+    }
+
+    .hero {
+        padding: 50px; /* Reduce padding in hero section for smaller screens */
+    }
+
+    .inventory {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column layout for smaller screens */
+    }
+}

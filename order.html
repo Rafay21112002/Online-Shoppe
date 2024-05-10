@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanal Candles Shoppe - Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add professional fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <nav>
+                <ul>
+                    <li><a href="title.html">Home</a></li>
+                    <li><a href="inventory.html">Shop</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="order-form">
+            <div class="container">
+                <h2>Order Form</h2>
+                <!-- Add form elements for customer details and selected candles -->
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                    <label for="message">Additional Instructions:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Artisanal Candles Shoppe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
